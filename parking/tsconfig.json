@@ -10,7 +10,8 @@
     "files": [
         "config.ts",
         "home.ts",
-        "ajaxLib.ts"
+        "ajaxLib.ts",
+        "ajaxUtil.ts"
       ],
     "exclude": [
         "node_modules",
