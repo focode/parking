@@ -11,7 +11,9 @@
         "config.ts",
         "home.ts",
         "ajaxLib.ts",
-        "ajaxUtil.ts"
+        "ajaxUtil.ts",
+        "ajax2.ts",
+        "newAjax.ts"
       ],
     "exclude": [
         "node_modules",
