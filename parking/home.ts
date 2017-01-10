@@ -4,13 +4,19 @@
 module Home {
     export class HomeContainer {
         private content: HTMLElement;
-        private selected?: any = [];
+        private _possessions: Array<string> = new Array<string>();
+        private _possessions1: Array<string> = [];
 
         constructor(value?: any) {
             //    document.body.innerHTML = value;
-
+            var num:number = 0
+            var count:number = 0;
             var el: HTMLElement = document.getElementById('grid1');
             $(el).css({ "color": "blue" });
+            for(num = 0;num<=100;){
+            this._possessions.push("hi");
+            this._possessions1.push("hi2");
+          }
             // $.ajax({
             //   url: "http://finance.google.com/finance/info?client=ig&q=NASDAQ:GOOGL",
             //   data: "",
@@ -45,6 +51,7 @@ module Home {
                 var tr = $(this).closest('tr');
                 var row = dt.row(tr);
                 console.log(dt.row(this).data());
+                localStorage.setItem
 
             });
 

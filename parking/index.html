@@ -6,27 +6,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-
+    <meta name="description" content="welcome to praking serach engine">
+    <meta name="author" content="whereisparking.com">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" media="screen" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/full-width-css.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/google-plus.css" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title></title>
 
 </head>
 
 <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -43,122 +40,96 @@
                     <li><a href="registerparking.html">Register Parking</a></li>
                     <li><a href="locateparking.html">Locate Parking</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Oppurtunity <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
+                            <li><a href="#">Refer a friend</a></li>
+                            <li><a href="#">Introduce this to your scociety</a></li>
+                            <li><a href="#">Introduce this to your Organisation</a></li>
+
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../navbar/">Default</a></li>
-                    <li><a href="../navbar-static-top/">Static top</a></li>
-                    <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+                    <li><div class="userContent"></div></li>
+                    <li><div  id="gSignIn"></div> </li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
+
         </div>
     </nav>
 
     <div class="container">
-
-        <!-- Main component for a primary marketing message or call to action -->
-        <div class="jumbotron">
-        </div>
-
+      <!-- Marketing Icons Section -->
+      <div class="row">
+          <div class="col-lg-12">
+              <h1 class="page-header">
+                  Welcome to Modern Business
+              </h1>
+          </div>
+          <div class="col-md-4">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.3.7</h4>
+                  </div>
+                  <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                      <a href="#" class="btn btn-default">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+                  </div>
+                  <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                      <a href="#" class="btn btn-default">Learn More</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                  </div>
+                  <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                      <a href="#" class="btn btn-default">Learn More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- /.row -->
     </div>
-    <!-- /container -->
-
-    <!--jumbotron starts -->
-    <div class="container">
-        <div class="jumbotron control-group">
-
-            <div class="form-group row">
-                <label for="example-text-input" class="col-xs-2 col-form-label">House No.</label>
-                <div class="col-xs-10">
-                    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="example-search-input" class="col-xs-2 col-form-label">Street Name:</label>
-                <div class="col-xs-10">
-                    <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="example-email-input" class="col-xs-2 col-form-label">Zip/Pincode:</label>
-                <div class="col-xs-10">
-                    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="example-email-input" class="col-xs-2 col-form-label">Locality:</label>
-                <div class="col-xs-10">
-                    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="example-email-input" class="col-xs-2 col-form-label">City:</label>
-                <div class="col-xs-10">
-                    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="example-tel-input" class="col-xs-2 col-form-label">Mobile:</label>
-                <div class="col-xs-10">
-                    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="example-datetime-local-input" class="col-xs-2 col-form-label">Start date:</label>
-                <div class="col-xs-10">
-                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
-                </div>
-            </div>
-
-            <button class="btn btn-default" type="submit">Submit</button>
-            <button class="btn btn-default" type="submit">Clear</button>
-        </div>
-    </div>
-    <!-- jumbotron ends -->
-    </div>
-    <!-- <div class="target" id="grid2">
-        <span>my grid 2</span>
-    </div>
-    <div id="grid1">
-        <span>my grid 1</span>
-    </div> -->
-
-    <div class="container">
-        <div class="jumbotron control-group">
-            <table id="example" class="display" cellspacing="0" width="100%">
-                <thead>
-                    <tr>
-                        <th>House No</th>
-                        <th>Street Name</th>
-                        <th>Zip/Pincode</th>
-                        <th>Locality</th>
-                        <th>City</th>
-                        <th>Mobile</th>
 
 
-                    </tr>
-                </thead>
-        </div>
-    </div>
+
     <!-- <script data-main="config" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.js"></script> -->
     <!-- <script data-main="home.js" src="require.js"></script> -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>whereisparking.com</title>
+    <meta name="google-signin-client_id" content="1093732449388-1fuih0r68i2kni8b8oom5ca3g10m9i3c.apps.googleusercontent.com">
+
+
+
+    <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
+     <script src="/login.js" </script>
 
     <script type="text/javascript" src="home.js"></script>
     <script type="text/javascript">
     </script>
+
+
+    <style>
+
+    </style>
+
+
 </body>
 
 </html>
