@@ -1,10 +1,10 @@
 // import * as $ from 'jquery'
 /// <reference path="jquery.d.ts" />
 /// <reference path="jquery.dataTables.d.ts" />
-var Home;
-(function (Home) {
-    var HomeContainer = (function () {
-        function HomeContainer(value) {
+var RegisterParking;
+(function (RegisterParking) {
+    var registerParkingContainer = (function () {
+        function registerParkingContainer(value) {
             //    document.body.innerHTML = value;
             var el = document.getElementById('grid1');
             $(el).css({ "color": "blue" });
@@ -13,7 +13,7 @@ var Home;
                 e.preventDefault();
                 console.log("in sumit");
                 // var HouseNo: HTMLElement = document.getElementById('HouseNo');
-                var houseNo = document.getElementById("HouseNo").value;
+                var HouseNo = document.getElementById("HouseNo").value;
                 var StreetName = document.getElementById("StreetName").value;
                 var Pincode = document.getElementById("Pincode").value;
                 var Locality = document.getElementById("Locality").value;
@@ -21,8 +21,19 @@ var Home;
                 var Mobile = document.getElementById("Mobile").value;
                 var ParkingType = document.getElementById("ParkingType").value;
                 var Rate = document.getElementById("Rate").value;
-                console.log("HouseNo:" + houseNo + " StreetName:" + StreetName + " Pincode:" + Pincode +
+                console.log("searching...");
+                console.log("HouseNo:" + HouseNo + " StreetName:" + StreetName + " Pincode:" + Pincode +
                     " Locality:" + Locality + " City:" + City + " Mobile:" + Mobile + " ParkingType:" + ParkingType + " Rate" + Rate);
+                var data = {};
+                data["houseNo"] = HouseNo;
+                data["streetName"] = StreetName;
+                data["pinZip"] = Pincode;
+                data["city"] = City;
+                data["contactNo"] = Mobile;
+                data["shaded"] = ParkingType;
+                data["rate"] = Rate;
+                var json = JSON.stringify(data);
+                alert(json);
             });
             var dt = $('#example').DataTable({
                 "ajax": "http://localhost:3001/all/parking",
@@ -49,11 +60,11 @@ var Home;
                 localStorage.setItem;
             });
         }
-        return HomeContainer;
+        return registerParkingContainer;
     }());
-    Home.HomeContainer = HomeContainer;
-})(Home || (Home = {}));
+    RegisterParking.registerParkingContainer = registerParkingContainer;
+})(RegisterParking || (RegisterParking = {}));
 window.onload = function () {
-    var object1 = new Home.HomeContainer("ram");
+    var object1 = new RegisterParking.registerParkingContainer("ram");
 };
-//# sourceMappingURL=home.js.map
+//# sourceMappingURL=registerParking.js.map

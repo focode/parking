@@ -1,10 +1,10 @@
 // import * as $ from 'jquery'
 /// <reference path="jquery.d.ts" />
 /// <reference path="jquery.dataTables.d.ts" />
-var Home;
-(function (Home) {
-    var HomeContainer = (function () {
-        function HomeContainer(value) {
+var LocateParking;
+(function (LocateParking) {
+    var locateParkingContainer = (function () {
+        function locateParkingContainer(value) {
             //    document.body.innerHTML = value;
             var el = document.getElementById('grid1');
             $(el).css({ "color": "blue" });
@@ -21,6 +21,7 @@ var Home;
                 var Mobile = document.getElementById("Mobile").value;
                 var ParkingType = document.getElementById("ParkingType").value;
                 var Rate = document.getElementById("Rate").value;
+                console.log("searching...");
                 console.log("HouseNo:" + houseNo + " StreetName:" + StreetName + " Pincode:" + Pincode +
                     " Locality:" + Locality + " City:" + City + " Mobile:" + Mobile + " ParkingType:" + ParkingType + " Rate" + Rate);
             });
@@ -49,11 +50,11 @@ var Home;
                 localStorage.setItem;
             });
         }
-        return HomeContainer;
+        return locateParkingContainer;
     }());
-    Home.HomeContainer = HomeContainer;
-})(Home || (Home = {}));
+    LocateParking.locateParkingContainer = locateParkingContainer;
+})(LocateParking || (LocateParking = {}));
 window.onload = function () {
-    var object1 = new Home.HomeContainer("ram");
+    var object1 = new LocateParking.locateParkingContainer("ram");
 };
-//# sourceMappingURL=home.js.map
+//# sourceMappingURL=locateParking.js.map

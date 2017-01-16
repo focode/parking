@@ -13,7 +13,9 @@
         "ajaxLib.ts",
         "ajaxUtil.ts",
         "ajax2.ts",
-        "newAjax.ts"
+        "newAjax.ts",
+        "locateParking.ts",
+        "registerParking.ts"
       ],
     "exclude": [
         "node_modules",

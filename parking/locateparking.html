@@ -8,62 +8,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" media="screen" />
     <!-- Latest compiled and minified CSS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <title></title>
 
 </head>
 
 <body>
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-           </button>
-                <a class="navbar-brand" href="#">Where is Parking</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="registerparking.html">Register Parking</a></li>
-                    <li><a href="locateparking.html">Locate Parking</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../navbar/">Default</a></li>
-                    <li><a href="../navbar-static-top/">Static top</a></li>
-                    <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </nav>
+  <!-- Fixed navbar -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+              <a class="navbar-brand" href="/">Where is Parking</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                  <li class="active"><a href="/">Home</a></li>
+                  <li><a href="registerparking.html">Register Parking</a></li>
+                  <li><a href="locateparking.html">Locate Parking</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Oppurtunity <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Refer a friend</a></li>
+                          <li><a href="#">Introduce this to your society</a></li>
+                          <li><a href="#">Introduce this to your Organisation</a></li>
+
+                      </ul>
+                  </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><div class="userContent"></div></li>
+                  <li><div  id="gSignIn"></div> </li>
+              </ul>
+          </div>
+
+      </div>
+  </nav>
 
     <div class="container">
 
@@ -81,43 +80,43 @@
             <div class="form-group row">
                 <label for="example-text-input" class="col-xs-2 col-form-label">House No.</label>
                 <div class="col-xs-10">
-                    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+                    <input class="form-control" type="text"  id="HouseNo">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="example-search-input" class="col-xs-2 col-form-label">Street Name:</label>
                 <div class="col-xs-10">
-                    <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+                    <input class="form-control" type="text"  id="StreetName">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="example-email-input" class="col-xs-2 col-form-label">Zip/Pincode:</label>
                 <div class="col-xs-10">
-                    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+                    <input class="form-control" type="text"  id="Pincode">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="example-email-input" class="col-xs-2 col-form-label">Locality:</label>
                 <div class="col-xs-10">
-                    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+                    <input class="form-control" type="text"  id="Locality">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="example-email-input" class="col-xs-2 col-form-label">City:</label>
                 <div class="col-xs-10">
-                    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+                    <input class="form-control" type="text"  id="City">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="example-tel-input" class="col-xs-2 col-form-label">Mobile:</label>
                 <div class="col-xs-10">
-                    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                    <input class="form-control" type="tel"  id="Mobile">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="example-tel-input" class="col-xs-2 col-form-label">Parking Type:</label>
                 <div class="col-xs-10">
-                    <select class="form-control">
+                    <select class="form-control" id="ParkingType">
                       <option>Shaded</option>
                       <option>Non-Shaded</option>
                   </select>
@@ -126,7 +125,7 @@
             <div class="form-group row">
                 <label for="example-tel-input" class="col-xs-2 col-form-label">Rate (Per hour ) / INR:</label>
                 <div class="col-xs-10">
-                    <select class="form-control">
+                    <select class="form-control" id="Rate">
                     <option>10</option>
                     <option>20</option>
                     <option>30</option>
@@ -138,11 +137,11 @@
             <div class="form-group row">
                 <label for="example-datetime-local-input" class="col-xs-2 col-form-label">Start date:</label>
                 <div class="col-xs-10">
-                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="Startdate">
                 </div>
             </div>
 
-            <button class="btn btn-default" type="submit">Search</button>
+            <button class="btn btn-default" id ="submitButton" type="submit">Submit</button>
             <button class="btn btn-default" type="submit">Clear</button>
         </div>
     </div>
@@ -176,12 +175,12 @@
     </div>
     <!-- <script data-main="config" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.js"></script> -->
     <!-- <script data-main="home.js" src="require.js"></script> -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <title>whereisparking.com</title>
+    <meta name="google-signin-client_id" content="1093732449388-1fuih0r68i2kni8b8oom5ca3g10m9i3c.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
+    <script src="/login.js" ></script>
+    <script src="/locateParking.js"></script>
 
-    <script type="text/javascript" src="home.js"></script>
-    <script type="text/javascript">
-    </script>
 </body>
 
 </html>

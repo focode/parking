@@ -1,8 +1,8 @@
 // import * as $ from 'jquery'
 /// <reference path="jquery.d.ts" />
 /// <reference path="jquery.dataTables.d.ts" />
-module Home {
-    export class HomeContainer {
+module LocateParking {
+    export class locateParkingContainer {
         private content: HTMLElement;
 
 
@@ -24,6 +24,7 @@ module Home {
               var Mobile = (<HTMLInputElement>document.getElementById("Mobile")).value;
               var ParkingType = (<HTMLInputElement>document.getElementById("ParkingType")).value;
               var Rate = (<HTMLInputElement>document.getElementById("Rate")).value;
+              console.log("searching...");
               console.log("HouseNo:"+houseNo+" StreetName:"+StreetName+" Pincode:"+Pincode+
               " Locality:"+Locality+" City:"+City+" Mobile:"+Mobile+" ParkingType:"+ParkingType+" Rate"+Rate);
           });
@@ -65,5 +66,5 @@ module Home {
 }
 
 window.onload = () => {
-    var object1 = new Home.HomeContainer("ram");
+    var object1 = new LocateParking.locateParkingContainer("ram");
 }

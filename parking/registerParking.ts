@@ -1,8 +1,8 @@
 // import * as $ from 'jquery'
 /// <reference path="jquery.d.ts" />
 /// <reference path="jquery.dataTables.d.ts" />
-module Home {
-    export class HomeContainer {
+module RegisterParking {
+    export class registerParkingContainer {
         private content: HTMLElement;
 
 
@@ -16,7 +16,7 @@ module Home {
             e.preventDefault();
             console.log("in sumit");
               // var HouseNo: HTMLElement = document.getElementById('HouseNo');
-              var houseNo = (<HTMLInputElement>document.getElementById("HouseNo")).value;
+              var HouseNo = (<HTMLInputElement>document.getElementById("HouseNo")).value;
               var StreetName = (<HTMLInputElement>document.getElementById("StreetName")).value;
               var Pincode = (<HTMLInputElement>document.getElementById("Pincode")).value;
               var Locality = (<HTMLInputElement>document.getElementById("Locality")).value;
@@ -24,8 +24,21 @@ module Home {
               var Mobile = (<HTMLInputElement>document.getElementById("Mobile")).value;
               var ParkingType = (<HTMLInputElement>document.getElementById("ParkingType")).value;
               var Rate = (<HTMLInputElement>document.getElementById("Rate")).value;
-              console.log("HouseNo:"+houseNo+" StreetName:"+StreetName+" Pincode:"+Pincode+
+              console.log("searching...");
+              console.log("HouseNo:"+HouseNo+" StreetName:"+StreetName+" Pincode:"+Pincode+
               " Locality:"+Locality+" City:"+City+" Mobile:"+Mobile+" ParkingType:"+ParkingType+" Rate"+Rate);
+              var data = {};
+              data["houseNo"] = HouseNo;
+              data["streetName"] = StreetName;
+              data["pinZip"] = Pincode;
+              data["city"] = City;
+              data["contactNo"] = Mobile;
+              data["shaded"] = ParkingType;
+              data["rate"] = Rate;
+
+              var json = JSON.stringify(data);
+              alert(json);
+
           });
 
             var dt = $('#example').DataTable({
@@ -65,5 +78,5 @@ module Home {
 }
 
 window.onload = () => {
-    var object1 = new Home.HomeContainer("ram");
+    var object1 = new RegisterParking.registerParkingContainer("ram");
 }
