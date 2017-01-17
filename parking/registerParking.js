@@ -1,6 +1,7 @@
 // import * as $ from 'jquery'
 /// <reference path="jquery.d.ts" />
 /// <reference path="jquery.dataTables.d.ts" />
+/// <reference path="UltimateAjax.ts" />
 var RegisterParking;
 (function (RegisterParking) {
     var registerParkingContainer = (function () {
@@ -33,7 +34,9 @@ var RegisterParking;
                 data["shaded"] = ParkingType;
                 data["rate"] = Rate;
                 var json = JSON.stringify(data);
-                alert(json);
+                var object1 = new UltimateAjax.AjaxContainer();
+                // object1.getData();
+                // alert(json);
             });
             var dt = $('#example').DataTable({
                 "ajax": "http://localhost:3001/all/parking",

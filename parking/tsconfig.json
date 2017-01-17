@@ -13,7 +13,7 @@
         "ajaxLib.ts",
         "ajaxUtil.ts",
         "ajax2.ts",
-        "newAjax.ts",
+        "UltimateAjax.ts",
         "locateParking.ts",
         "registerParking.ts"
       ],
