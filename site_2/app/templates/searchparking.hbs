@@ -1,0 +1,81 @@
+<div class="form-group">
+  <label class="control-label col-sm-offset-2 col-sm-2" for="company">Search Type</label>
+  <div class="col-sm-6 col-md-4">
+    <select id="company" class="form-control">
+      <option>City</option>
+      <option>Pincode/Zipcode</option>
+    </select> 
+  </div>
+</div>
+
+
+
+<div class="form-group">
+      <label for="Street Name" class=" col-sm-offset-2 col-md-2 control-label">Search Value</label>
+      <div class="col-md-5">
+        {{input value=model.name class="form-control"}}
+      </div>
+ </div>
+<div class="form-group">
+<!--      <button type="button" class=" col-sm-offset-2 btn btn-primary">Search</button>-->
+	  <button type="button" class=" col-sm-offset-2 btn btn-primary" {{action 'search'}}>Search</button>
+ </div>
+<!--
+<div class="container">
+{{parking-result action="showUser"}}
+</div>
+-->
+<div class="container">
+	<nav class ="col-sm-offset-10" aria-label="Pagenation">
+	  <ul class="pagination">
+		<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+		<li ><a href="#">2 <span class="sr-only">(current)</span></a></li>
+		<li ><a href="#">3 <span class="sr-only">(current)</span></a></li>
+	  </ul>
+   </nav>
+	
+{{#if isTableEnabled}}
+	
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>OwnerName</th>
+      <th>houseNo</th>
+      <th>streetName</th>
+	  <th>areaName</th>
+	  <th>city</th>
+	  <th>pinZip</th>
+	  <th>stateProvince</th>
+	  <th>country</th>
+	  <th>shaded</th>
+	  <th>rate</th>
+	  <th>status</th>
+	  <th>availibility</th>
+	  <th>contactNo</th>
+	  
+    </tr>
+  </thead>
+  <tbody>
+	  {{#each data.data as |row|}}
+        <tr>
+      <th>{{row.ownerName}}</th>
+	  <th>{{row.houseNo}}</th>
+	  <th>{{row.streetName}}</th>
+	  <th>{{row.areaName}}</th>
+	  <th>{{row.city}}</th>
+	  <th>{{row.pinZip}}</th>
+	  <th>{{row.stateProvince}}</th>
+	  <th>{{row.country}}</th>
+	  <th>{{row.shaded}}</th>
+	  <th>{{row.rate}}</th>
+	  <th>{{row.status}}</th>
+	  <th>{{row.availibility}}</th>
+	  <th>{{row.contactNo}}</th>
+        </tr>
+{{/each}}
+  </tbody>
+</table>
+{{/if}}
+<div id="hbsTemp"></div>
+</div>

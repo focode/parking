@@ -1,0 +1,18 @@
+ <table class="table table-striped">
+   <thead>
+   <tr>
+       <th>Name</th>
+       <th>Mark</th>
+       <th>Subject</th>
+   </tr>
+   </thead>
+   <tbody>
+   {{#each students}}
+   <tr>
+       <td>{{ this.name }}</td>
+       <td>{{ this.mark }}</td>
+       <td>{{ this.subject }}</td>
+   </tr>
+   {{/each}}
+   </tbody>
+ </table>
