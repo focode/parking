@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+     <button ion-button icon-only menuToggle>
+       <ion-icon name="menu"></ion-icon>
+     </button>
+   </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <button ion-button full (click)="loginWithFB()">Login!</button>
+  <ion-card *ngIf="userData">
+    <ion-card-header>
+      {{userData.username}}
+    </ion-card-header>
+    <img [src]="userData.picture" />
+    <ion-card-content>
+      <p>Email: {{userData.email}}</p>
+      <p>First Name: {{userData.first_name}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
