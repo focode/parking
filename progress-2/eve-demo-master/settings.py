@@ -189,13 +189,13 @@ parking = {
 			'type': 'float',
             'minlength': 15,
             'maxlength': 150,	
-			'required': True,	
+			
         },
 		'lon': {
 			'type': 'float',
             'minlength': 15,
             'maxlength': 150,	
-			'required': True,	
+			
         },
 		'bookedBy': {
 			'type': 'string',

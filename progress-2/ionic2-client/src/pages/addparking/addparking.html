@@ -18,56 +18,53 @@
   <form (ngSubmit)="logForm()">
     <ion-item>
       <ion-label>UserId</ion-label>
-      <ion-input type="text" [(ngModel)]="todo.title" name="UserId"></ion-input>
+      <ion-input type="text" [(ngModel)]="parking.user" name="UserId"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Street Name 1</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="StreetName1"></ion-input>
+      <ion-input [(ngModel)]="parking.streetName1" name="StreetName1"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Street Name 2</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="StreetName2"></ion-input>
+      <ion-input [(ngModel)]="parking.streetName2" name="StreetName2"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Area Name</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="AreaName"></ion-input>
+      <ion-input [(ngModel)]="parking.areaName" name="AreaName"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>City Name</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="CityName"></ion-input>
+      <ion-input [(ngModel)]="parking.cityName" name="CityName"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>State Name</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="StateName"></ion-input>
+      <ion-input [(ngModel)]="parking.stateName" name="StateName"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Zip Code</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="ZipCode"></ion-input>
+      <ion-input [(ngModel)]="parking.zipcode" name="ZipCode"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Location Pic</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="locationpic"></ion-input>
+      <ion-input [(ngModel)]="parking.locationpic" name="locationpic"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Rate</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="Rate"></ion-input>
+      <ion-input [(ngModel)]="parking.rate" name="Rate"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Currency</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="Currency"></ion-input>
+      <ion-input [(ngModel)]="parking.currency" name="Currency"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Activation State</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="Activation"></ion-input>
+      <ion-input [(ngModel)]="parking.activationState" name="Activation"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Booking Status</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="BookingStatus"></ion-input>
+      <ion-input [(ngModel)]="parking.bookingStatus" name="BookingStatus"></ion-input>
     </ion-item>
-    <ion-item>
-      <ion-label>Booking Status</ion-label>
-      <ion-input [(ngModel)]="todo.description" name="BookingStatus"></ion-input>
-    </ion-item>
+    
     <button ion-button type="submit" block>Add Parking</button>
   </form>
 </ion-content>
