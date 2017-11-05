@@ -17,13 +17,57 @@
 <ion-content padding>
   <form (ngSubmit)="logForm()">
     <ion-item>
-      <ion-label>Todo</ion-label>
-      <ion-input type="text" [(ngModel)]="todo.title" name="title"></ion-input>
+      <ion-label>UserId</ion-label>
+      <ion-input type="text" [(ngModel)]="todo.title" name="UserId"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Description</ion-label>
-      <ion-textarea [(ngModel)]="todo.description" name="description"></ion-textarea>
+      <ion-label>Street Name 1</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="StreetName1"></ion-input>
     </ion-item>
-    <button ion-button type="submit" block>Add Todo</button>
+    <ion-item>
+      <ion-label>Street Name 2</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="StreetName2"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Area Name</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="AreaName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>City Name</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="CityName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>State Name</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="StateName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Zip Code</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="ZipCode"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Location Pic</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="locationpic"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Rate</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="Rate"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Currency</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="Currency"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Activation State</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="Activation"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Booking Status</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="BookingStatus"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Booking Status</ion-label>
+      <ion-input [(ngModel)]="todo.description" name="BookingStatus"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" block>Add Parking</button>
   </form>
 </ion-content>
